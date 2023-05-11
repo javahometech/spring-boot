@@ -59,21 +59,23 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	<plugins>
-		<plugin>
-		    <groupId>org.springframework.boot</groupId>
-		    <artifactId>spring-boot-maven-plugin</artifactId>
-		    <configuration>
-			<mainClass>in.javahome.springboot.App</mainClass>
-		    </configuration>
+	<build>
+		<plugins>
+			<plugin>
+			    <groupId>org.springframework.boot</groupId>
+			    <artifactId>spring-boot-maven-plugin</artifactId>
+			    <configuration>
+				<mainClass>in.javahome.springboot.App</mainClass>
+			    </configuration>
 
-		    <executions>
-			<execution>
-			    <goals>
-				<goal>repackage</goal>
-			    </goals>
-			</execution>
-		    </executions>
-		</plugin>
-	</plugins>
+			    <executions>
+				<execution>
+				    <goals>
+					<goal>repackage</goal>
+				    </goals>
+				</execution>
+			    </executions>
+			</plugin>
+		</plugins>
+	</build>
 </project>
